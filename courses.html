@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Courses and Programs</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+	<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<style type="text/css">
+		.card{
+			border:2px solid #002147;
+			border-radius: 3px;
+		}
+		
+		.fun{
+			display: none;
+		}
+		table:hover .po{
+			display: none;
+		}
+		table:hover .fun{
+			display: block;
+		}
+		body{
+			overflow-x: hidden;
+		}
+		.topbar{
+			margin:2px;
+			background-color: #002147;
+			color: white;
+			width: auto;
+		}
+		.logo{
+			height:75px;
+			width: 300px;
+		}
+		@media only screen and (max-width: 600px){
+			body{
+				overflow-x: hidden;
+			}
+			.logo{
+				height:150px;
+				width: 80%;
+				margin: 10px;
+			}
+			.topbar{
+				width: auto;
+			}
+		}
+	</style>
+	<script type="text/javascript">
+		function formcall(){
+			document.getElementById('form').style.display="block";
+			document.getElementById('course').style.opacity=0.5;
+		}
+	</script>
+</head>
+<body >
+			<div class="topbar row">
+			<div class="col-12">
+				<p style="margin:7px;font-weight:1000;float: right;">Login/Register</p>
+				<lottie-player src="https://assets8.lottiefiles.com/packages/lf20_5AavoT.json"  background="transparent"  speed="2"  style="width: 75px;height: 50px;float: right;"  loop autoplay>
+				</lottie-player>
+			</div>
+		</div>
+		
+		<div class="row">
+		<div class="col-md-3 ">
+			<center><img src="cool.jpg" class="logo" alt="logo" /><center>
+		</div>
+		<div class="col-md-9" >
+		<nav class="navbar navbar-expand-lg navbar-light ">
+			<a class="navbar-brand" href="#">Navbar</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			    <span class="navbar-toggler-icon"></span>
+			</button>
+
+		  	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			    <ul class="navbar-nav mr-auto">
+			      <li class="nav-item active">
+			        <a class="nav-link" href="home.html">Home </a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="aboutas.html">About Us</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="courses.html.html">Courses & Programs<span class="sr-only">(current)</span></a>
+			      </li>
+			      
+			      <li class="nav-item">
+			        <a class="nav-link disabled" href="ourpractises.html">Our Practices</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link disabled" href="#">ContactUs</a>
+			      </li>
+			    </ul>
+			    <form class="form-inline my-2 my-lg-0">
+			      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+			      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+			    </form>
+		  </div>
+		</nav>
+		</div>
+	</div>
+
+	<div style="margin: 4px;margin-bottom: 100px;" >
+		<img src="s3.jpg" class="d-block w-100">
+	</div>
+
+	<center><h1 style="margin-bottom: 30px;">Engineering Courses</h1></center>
+	<center><hr style="background-color: #002147;;height: 3px;width: 100px;margin-bottom: 20px;"></center>
+	
+	<div class="row" style="margin-top: 20px;margin-bottom: 20px;">
+		<div class="col-md-4" style="margin-top: 20px;margin-bottom: 20px;">
+			<div class="container">
+				<div class="card">
+					<table>
+						<tr>
+							<td style="height: 50px;width: 50px"><img src="auto1.gif" style="width: 100%;height:100%;"></td>
+							<td style="color: #002147;font-size: 19px;"class="po">Automobile Engineering</td>
+							<td style="color: #002147;font-size: 19px;" class="fun"><button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#myModal">Enquiry</button></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4" style="margin-top: 20px;margin-bottom: 20px;">
+			<div class="container">
+				<div class="card">
+					<table>
+						<tr>
+							<td style="height: 50px;width: 50px"><img src="micro.gif" style="width: 100%;height:100%;"></td>
+							<td style="color: #002147;font-size: 19px;"class="po">Bio Technology</td>
+							<td style="color: #002147;font-size: 19px;" class="fun"><button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#myModal">Enquiry</button></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4" style="margin-top: 20px;margin-bottom: 20px;">
+			<div class="container">
+				<div class="card">
+					<table>
+						<tr>
+							<td style="height: 50px;width: 50px"><img src="ece.gif" style="width: 100%;height:100%;"></td>
+							<td style="color: #002147;font-size: 18px;" class="po">Electronics & Communication Engineering</td>
+							<td style="color: #002147;font-size: 19px;" class="fun"><button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#myModal">Enquiry</button></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>		
+
+
+	<div class="row" style="margin-top: 20px;margin-bottom: 20px;">
+		<div class="col-md-4" style="margin-top: 20px;margin-bottom: 20px;">
+			<div class="container">
+				<div class="card">
+					<table>
+						<tr>
+							<td style="height: 50px;width: 50px"><img src="eee.gif" style="width: 100%;height:100%;"></td>
+							<td style="color: #002147;font-size: 19px;" class="po">Electrical & Electronics Engineering</td>
+							<td style="color: #002147;font-size: 19px;" class="fun"><button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#myModal">Enquiry</button></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4" style="margin-top: 20px;margin-bottom: 20px;">
+			<div class="container">
+				<div class="card">
+					<table>
+						<tr>
+							<td style="height: 50px;width: 50px"><img src="civil.gif" style="width: 100%;height:100%;"></td>
+							<td style="color: #002147;font-size: 19px;" class="po">Civil Engineering</td>
+							<td style="color: #002147;font-size: 19px;" class="fun"><button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#myModal">Enquiry</button></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4" style="margin-top: 20px;margin-bottom: 20px;">
+			<div class="container">
+				<div class="card">
+					<table>
+						<tr>
+							<td style="height: 50px;width: 50px"><img src="computer1.gif" style="width: 100%;height:100%;"></td>
+							<td style="color: #002147;font-size: 19px;" class="po">Computer Science & Engineering</td>
+							<td style="color: #002147;font-size: 19px;" class="fun"><button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#myModal">Enquiry</button></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="row" style="margin-top: 20px;margin-bottom: 20px;">
+		<div class="col-md-4" style="margin-top: 20px;margin-bottom: 20px;">
+			<div class="container">
+				<div class="card">
+					<table>
+						<tr>
+							<td style="height: 50px;width: 50px"><img src="computer.gif" style="width: 100%;height:100%;"></td>
+							<td style="color: #002147;font-size: 19px;" class="po">Information Technology</td>
+							<td style="color: #002147;font-size: 19px;" class="fun"><button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#myModal">Enquiry</button></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4" style="margin-top: 20px;margin-bottom: 20px;">
+			<div class="container">
+				<div class="card">
+					<table>
+						<tr>
+							<td style="height: 50px;width: 50px"><img src="aeroplane1.gif" style="width: 100%;height:100%;"></td>
+							<td style="color: #002147;font-size: 19px;" class="po">AeroSpace Engineering</td>
+							<td style="color: #002147;font-size: 19px;" class="fun"><button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#myModal">Enquiry</button></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4" style="margin-top: 20px;margin-bottom: 20px;">
+			<div class="container">
+				<div class="card">
+					<table>
+						<tr>
+							<td style="height: 50px;width: 50px"><img src="ei.gif" style="width: 100%;height:100%;"></td>
+							<td style="color: #002147;font-size: 18px;" class="po">Electronics & Instrumentation Engineering</td>
+							<td style="color: #002147;font-size: 19px;" class="fun"><button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#myModal">Enquiry</button></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>		
+
+
+	<div class="row" style="margin-top: 20px;margin-bottom: 20px;">
+		<div class="col-md-4" style="margin-top: 20px;margin-bottom: 20px;">
+			<div class="container">
+				<div class="card">
+					<table>
+						<tr>
+							<td style="height: 50px;width: 50px"><img src="mech2.gif" style="width: 100%;height:100%;"></td>
+							<td style="color: #002147;font-size: 19px;" class="po">Mechanical Engineering</td>
+							<td style="color: #002147;font-size: 19px;" class="fun"><button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#myModal">Enquiry</button></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+		
+	</div>		
+
+	<hr style="margin-top: 50px;margin-bottom: 50px;">
+
+	<center><h1 style="margin-bottom: 30px;">Programming Courses</h1></center>
+	<center><hr style="background-color: #002147;;height: 3px;width: 100px;margin-bottom: 20px;"></center>
+
+	<div class="row" style="margin-top: 20px;margin-bottom: 20px;">
+		<div class="col-md-4" style="margin-top: 20px;margin-bottom: 20px;">
+			<div class="container">
+				<div class="card">
+					<table>
+						<tr>
+							<td style="height: 50px;width: 50px"><img src="c.gif" style="width: 100%;height:100%;"></td>
+							<td style="color: #002147;font-size: 19px;" class="po">Programming in C</td>
+							<td style="color: #002147;font-size: 19px;" class="fun"><button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#myModal">Enquiry</button></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4" style="margin-top: 20px;margin-bottom: 20px;">
+			<div class="container">
+				<div class="card">
+					<table>
+						<tr>
+							<td style="height: 50px;width: 50px"><img src="python.png" style="width: 100%;height:100%;"></td>
+							<td style="color: #002147;font-size: 19px;padding-left: 10px;" class="po">Python programming</td>
+							<td style="color: #002147;font-size: 19px;" class="fun"><button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#myModal">Enquiry</button></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4" style="margin-top: 20px;margin-bottom: 20px;">
+			<div class="container">
+				<div class="card">
+					<table>
+						<tr>
+							<td style="height: 50px;width: 50px"><img src="java.png" style="width: 100%;height:100%;"></td>
+							<td style="color: #002147;font-size: 19px;padding-left: 10px;" class="po">Java Programming</td>
+							<td style="color: #002147;font-size: 19px;" class="fun"><button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#myModal">Enquiry</button></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>	
+
+
+
+	<div class="row" style="margin-top: 20px;margin-bottom: 20px;">
+		<div class="col-md-4" style="margin-top: 20px;margin-bottom: 20px;">
+			<div class="container">
+				<div class="card">
+					<table>
+						<tr>
+							<td style="height: 50px;width: 50px"><img src="c++.png" style="width: 100%;height:100%;"></td>
+							<td style="color: #002147;font-size: 19px;" class="po">Programming in C++</td>
+							<td style="color: #002147;font-size: 19px;" class="fun"><button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#myModal">Enquiry</button></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4" style="margin-top: 20px;margin-bottom: 20px;">
+			<div class="container">
+				<div class="card">
+					<table>
+						<tr>
+							<td style="height: 50px;width: 50px"><img src="swift.png" style="width: 100%;height:100%;"></td>
+							<td style="color: #002147;font-size: 19px;padding-left: 10px;" class="po">Swift</td>
+							<td style="color: #002147;font-size: 19px;" class="fun"><button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#myModal">Enquiry</button></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4" style="margin-top: 20px;margin-bottom: 20px;">
+			<div class="container">
+				<div class="card">
+					<table>
+						<tr>
+							<td style="height: 50px;width: 50px"><img src="kotlin.png" style="width: 100%;height:100%;"></td>
+							<td style="color: #002147;font-size: 19px;padding-left: 10px;" class="po">Kotlin</td>
+							<td style="color: #002147;font-size: 19px;" class="fun"><button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#myModal">Enquiry</button></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>		
+	
+	<hr style="margin-top: 50px;margin-bottom: 50px;">
+	
+	<center><h1 style="margin-bottom: 30px;">Projects</h1></center>
+	<center><hr style="background-color: #002147;;height: 3px;width: 100px;margin-bottom: 20px;"></center>
+
+	<div class="row" style="margin-top: 20px;margin-bottom: 20px;">
+		<div class="col-md-4" style="margin-top: 20px;margin-bottom: 20px;">
+			<div class="container">
+				<div class="card">
+					<table>
+						<tr>
+							<td style="height: 50px;width: 50px"><img src="android1.png" style="width: 100%;height:100%;"></td>
+							<td style="color: #002147;font-size: 19px;" class="po">Android</td>
+							<td style="color: #002147;font-size: 19px;" class="fun"><button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#myModal">Enquiry</button></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4" style="margin-top: 20px;margin-bottom: 20px;">
+			<div class="container">
+				<div class="card">
+					<table>
+						<tr>
+							<td style="height: 50px;width: 50px"><img src="html3.jpg" style="width: 100%;height:100%;"></td>
+							<td style="color: #002147;font-size: 19px;padding-left: 10px;" class="po">Web Development</td>
+							<td style="color: #002147;font-size: 19px;" class="fun"><button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#myModal">Enquiry</button></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4" style="margin-top: 20px;margin-bottom: 20px;">
+			
+		</div>
+	</div>		
+
+
+
+
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+     
+      	<div class="modal-header">
+        	<h4 class="modal-title">Enquiry Form</h4>
+        	<button type="button" class="close" data-dismiss="modal">&times;</button>
+     	 </div>
+
+      
+      	<div class="modal-body">
+        	<form action="/action_page.php">
+        		<div class="form-group">
+		  	  		<label for="name">Name:</label>
+		    		<input type="text" class="form-control" placeholder="Enter Name" id="name">
+		  		</div>
+		  		<div class="form-group">
+		  	  		<label for="email">Email address:</label>
+		    		<input type="email" class="form-control" placeholder="Enter email" id="email">
+		  		</div>
+		  		<div class="form-group">
+		  	  		<label for="conno">Contact Number:</label>
+		    		<input type="tel" class="form-control" placeholder="Enter Contact Number" id="conno">
+		  		</div>
+		  		<div class="form-group">
+		  	  		<label for="country">Country:</label>
+		    		<input type="text" class="form-control" placeholder="Enter Your Country Name" id="country">
+		  		</div>
+		  		<div class="form-group">
+				  <label for="dep">Choose Department:</label>
+				  <select class="form-control" id="dep">
+				    <option>CSE</option>
+				    <option>ECE</option>
+				    <option>IT</option>
+				    <option>CIVIL</option>
+				  </select>
+				</div>
+		  		<div class="form-group">
+		  	  		<label for="year">Year:</label>
+		    		<input type="month" class="form-control" placeholder="Enter Year" id="year">
+		  		</div>
+		  		<div class="form-group">
+		  			<label for="year">Service:</label><br>
+		  	  		<label class="checkbox-inline"><input type="checkbox" value="">&nbsp Assignment</label>
+					<label class="checkbox-inline"><input type="checkbox" value="">&nbsp Full Syllabus</label>
+					<label class="checkbox-inline"><input type="checkbox" value="">&nbsp Revision</label>
+					<label class="checkbox-inline"><input type="checkbox" value="">&nbsp Others</label>
+		  		</div>
+		  		<div class="form-group">
+		  	  		<label for="subject">Subject:</label>
+		    		<input type="text" class="form-control" placeholder="Enter the Subject Name" id="subject">
+		  		</div>
+		  		<div class="form-group">
+		  	  		<label for="subjectcode">Subject Code:</label>
+		    		<input type="text" class="form-control" placeholder="Enter the Subject Code" id="subjectcode">
+		  		</div>
+		  		<div class="form-group">
+		  	  		<label for="subjectcode">Language:</label><br>
+		    		<label class="radio-inline"><input type="radio" name="optradio" checked>&nbsp Tamil</label>
+					<label class="radio-inline"><input type="radio" name="optradio">&nbsp English</label>
+		  		</div>
+		  		<div class="form-group">
+		  	  		<label for="instruction">Special Instruction to instructor:</label>
+		    		<textarea class="form-control" rows="5" id="instruction"></textarea>
+		  		</div>
+		  		<div class="form-group">
+		  	  		<label for="time">Time for training:</label>
+		    		<input type="text" class="form-control" placeholder="Enter time" id="time">
+		  		</div>
+		  		<div class="form-group">
+		  	  		<label for="day">Enter day for training:</label>
+		    		<input type="text" class="form-control" placeholder="Enter day" id="day">
+		  		</div>
+		  		<div class="form-group">
+				    <label for="fileupload">File Upload</label>
+				    <input type="file" class="form-control-file" id="fileupload">
+				</div>
+		  		<button type="submit" class="btn btn-primary" style="float: right;">Submit</button>
+		  		<button type="button" class="btn btn-danger" data-dismiss="modal" style="float: left;">Close</button>
+			</form>
+      	</div>
+
+      
+      <div class="modal-footer">
+        
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+	<footer class="page-footer font-small unique-color-dark" style="background-color:#002147;">
+
+	  <div style="background-color: #6351ce;">
+	    <div class="container">
+
+	     
+	      <div class="row py-4 d-flex align-items-center">
+
+	        <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+	          <h6 class="mb-0">Get connected with us on social networks!</h6>
+	        </div>
+	        
+	        <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+	          
+	          <a class="fb-ic" style="margin: 3px;">
+	            <i class="fa fa-facebook" aria-hidden="true"></i>
+	          </a>
+	          
+	          <a class="tw-ic" style="margin: 3px;">
+	           <i class="fa fa-twitter" aria-hidden="true"></i>
+	          </a>
+	          
+	          <a class="gplus-ic" style="margin: 3px;">
+	            <i class="fa fa-google-plus" aria-hidden="true"></i>
+	          </a>
+	          
+	          <a class="li-ic" style="margin: 3px;">
+	            <i class="fa fa-linkedin" aria-hidden="true"></i>
+	          </a>
+	          
+	          <a class="ins-ic" style="margin: 3px;">
+	            <i class="fa fa-instagram" aria-hidden="true"></i>
+	          </a>
+
+	        </div>
+	        
+
+	      </div>
+	      
+
+	    </div>
+	  </div>
+
+	  
+	  <div class="container text-center text-md-left mt-5" style="color: white;">
+
+	    <div class="row mt-3">
+
+	      
+	      <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+	        
+	        <h6 class="text-uppercase font-weight-bold">Company name</h6>
+	        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+	        <p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
+	          consectetur
+	          adipisicing elit.</p>
+
+	      </div>
+	     
+	      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+	        
+	        <h6 class="text-uppercase font-weight-bold">Products</h6>
+	        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+	        <p>
+	          <a href="#!">MDBootstrap</a>
+	        </p>
+	        <p>
+	          <a href="#!">MDWordPress</a>
+	        </p>
+	        <p>
+	          <a href="#!">BrandFlow</a>
+	        </p>
+	        <p>
+	          <a href="#!">Bootstrap Angular</a>
+	        </p>
+
+	      </div>
+	      
+	      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+
+	        <h6 class="text-uppercase font-weight-bold">Useful links</h6>
+	        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+	        <p>
+	          <a href="#!">Your Account</a>
+	        </p>
+	        <p>
+	          <a href="#!">Become an Affiliate</a>
+	        </p>
+	        <p>
+	          <a href="#!">Shipping Rates</a>
+	        </p>
+	        <p>
+	          <a href="#!">Help</a>
+	        </p>
+
+	      </div>
+	      
+	      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+	        <!-- Links -->
+	        <h6 class="text-uppercase font-weight-bold">Contact</h6>
+	        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+	        <p>
+	          <i class="fa fa-home" aria-hidden="true"></i> New York, NY 10012, US</p>
+	        <p>
+	          <i class="fa fa-envelope" aria-hidden="true"></i> info@example.com</p>
+	        <p>
+	          <i class="fa fa-phone" aria-hidden="true"></i> + 01 234 567 88</p>
+	        <p>
+	          <i class="fa fa-fax" aria-hidden="true"></i> + 01 234 567 89</p>
+
+	      </div>
+	      
+	    </div>
+	    
+
+	  </div>
+	  
+	  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+	    <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+	  </div>
+	  
+
+	</footer>
+
+</body>
+</html>
